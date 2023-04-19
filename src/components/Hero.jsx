@@ -3,12 +3,14 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { motion } from "framer-motion";
 import photo from "../assets/20230330075156704-PhotoRoom.png-PhotoRoom.png";
+import video from "../assets/vecteezy-blue-fractal-ball-446-unscreen.gif";
 import { styles } from "../styles";
 
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <div className={` w-full h-screen mx-auto`}>
+    <section className={`relative `}>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -25,32 +27,23 @@ const Hero = () => {
            Я разрабатываю интернет магазины <br className='sm:block hidden' />
            и другие веб приложения.
           </p>
-                 <div className=" h-[400px] md:h-[800px] w-full relative items-center justify-center ">
-          <Canvas>
-            <Suspense fallback={null}>
-              <OrbitControls enableZoom={false} />
-              <ambientLight intensity={1} />
-              <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.4}>
-                <MeshDistortMaterial
-                  color="#3d1c56"
-                  attach="material"
-                  distort={0.5}
-                  speed={2}
-                />
-              </Sphere>
-            </Suspense>
-          </Canvas>
-
-              <img src={photo} alt="" className="absolute h-[250px] md:h-[500px] top-10 md:top-24 right-10 md:right-32 items-center justify-center animate-wiggle"/>
-       </div>
         </div>
       </div>
+
 
     
 
     
     </section>
+                     <div className="relative w-full items-center justify-center ">
+                     <div className="relative h-[150px] ">
+                     </div>
+                     
+<img src={video} className="relative h-[200px] md:h-[400px] scale-125 top-56 right-10 md:top-[280px] md:left-0 xl:left-[250px] xl:top-[200px] 2xl:left-[400px] 2xl:top-[300px] items-center justify-center  " />
+
+              <img src={photo} alt="" className="relative h-[150px] md:h-[300px] top-8 left-16 md:left-[200px] md:top-[-100px] xl:left-[450px] xl:top-[-180px]  2xl:left-[600px] 2xl:top-[-80px] items-center justify-center animate-wiggle"/>
+       </div>
+       </div>
   );
 };
 

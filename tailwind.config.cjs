@@ -24,15 +24,16 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        "web": "url('/src/assets/pxfuel.jpg')",
       },
       keyframes: {
         wiggle: {
-          '0%, 100%': { transform: 'translateY(20px)' },
+          '0%, 100%': { transform: 'translateY(10px)' },
           '50%': { transform: 'rotate(0deg)' },
         }
       },
         animation: {
-        wiggle: 'wiggle 2s ease infinite alternate',
+        wiggle: 'wiggle 3s ease infinite alternate',
       },
     },
   },
