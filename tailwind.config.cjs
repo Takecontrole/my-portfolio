@@ -6,8 +6,12 @@ module.exports = {
     extend: {
       colors: {
         primary: "#050816",
-        secondary: "#aaa6c3",
+        secondary: "#D58E88",
         tertiary: "#151030",
+        tertiar: "#1d1836",
+        light: "#fff",
+        lightsec: "#5B2935",
+        light3: "#A58AC5",
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
@@ -20,6 +24,15 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'translateY(20px)' },
+          '50%': { transform: 'rotate(0deg)' },
+        }
+      },
+        animation: {
+        wiggle: 'wiggle 2s ease infinite alternate',
       },
     },
   },

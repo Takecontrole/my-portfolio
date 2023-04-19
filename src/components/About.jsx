@@ -7,58 +7,49 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
+const Skill = ({name, x, y}) => {
+  
+  return (
+    <motion.div className="absolute flex items-center justify-center rounded-full font-semibold bg-lightsec text-light md:py-5 px-8  shadow-white cursor-pointer "
+whileHover={{scale:1.05}}
+initial={{x:0, y:0}}
+whileInView={{x:x, y:y}}
+transition={{duration: 1.5}}
+>
+{name}
+</motion.div>
+    )
+}
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
+
 
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+    <div  className="w-full h-screen relative flex items-center justify-center rounded-full bg-hero-pattern mt-64">
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+<motion.div className="flex items-center justify-center rounded-full font-semibold bg-lightsec text-light p-8 shadow-dark cursor-pointer"
+whileHover={{scale:1.05}}
+>
+Web
+</motion.div>
+<Skill name="CSS" x="+0vw" y="+9vw"/>
+<Skill name="HTML" x="+11vw" y="+3vw"/>
+<Skill name="JavaScript" x="-10vw" y="+3vw"/>
+<Skill name="UI UX Дизайнер" x="+25vw" y="-6vw"/>
+<Skill name="Styled components" x="+0vw" y="+25vw"/>
+<Skill name="Material UI" x="+25vw" y="+6vw"/>
+<Skill name="Bootstrap" x="-16vw" y="+17vw"/>
+<Skill name="Tailwind" x="+16vw" y="+17vw"/>
+<Skill name="React" x="-16vw" y="-17vw"/>
+<Skill name="Next.js" x="+16vw" y="-17vw"/>
+<Skill name="React Native" x="-25vw" y="+6vw"/>
+<Skill name="Three.js" x="+11vw" y="-3vw"/>
+<Skill name="Databases" x="0vw" y="-10vw"/>
+<Skill name="Express" x="-10vw" y="-3vw"/>
+<Skill name="Node.js" x="-25vw" y="-6vw"/>
+<Skill name="Full Stack Разработчик" x="0vw" y="-25vw"/>
+</div>
     </>
   );
 };

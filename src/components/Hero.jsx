@@ -1,7 +1,10 @@
+import React, { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { motion } from "framer-motion";
-
+import photo from "../assets/20230330075156704-PhotoRoom.png-PhotoRoom.png";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+
 
 const Hero = () => {
   return (
@@ -16,34 +19,37 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+            Привет, я <span className='text-[#915EFF]'>Валентин</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+           Я разрабатываю интернет магазины <br className='sm:block hidden' />
+           и другие веб приложения.
           </p>
+                 <div className=" h-[400px] md:h-[800px] w-full relative items-center justify-center ">
+          <Canvas>
+            <Suspense fallback={null}>
+              <OrbitControls enableZoom={false} />
+              <ambientLight intensity={1} />
+              <directionalLight position={[3, 2, 1]} />
+              <Sphere args={[1, 100, 200]} scale={2.4}>
+                <MeshDistortMaterial
+                  color="#3d1c56"
+                  attach="material"
+                  distort={0.5}
+                  speed={2}
+                />
+              </Sphere>
+            </Suspense>
+          </Canvas>
+
+              <img src={photo} alt="" className="absolute h-[250px] md:h-[500px] top-10 md:top-24 right-10 md:right-32 items-center justify-center animate-wiggle"/>
+       </div>
         </div>
       </div>
 
-      <ComputersCanvas />
+    
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-secondary mb-1'
-            />
-          </div>
-        </a>
-      </div>
+    
     </section>
   );
 };
