@@ -8,9 +8,13 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+import SecondWorks from "./SecondWork";
+import ThirdWorks from "./ThirdWork";
 
 
 export {
+  ThirdWorks,
+  SecondWorks,
   Hero,
   Navbar,
   About,

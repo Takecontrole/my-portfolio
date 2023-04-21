@@ -4,6 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import {motion} from "framer-motion";
+import circle from "../assets/circleicon.gif";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
@@ -17,16 +18,17 @@ const ExperienceCard = ({ experience }) => {
       contentStyle={{
         background: "#5B2935",
         color: "#fff",
+        
       }}
       contentArrowStyle={{ borderRight: "15px solid  #5B2935" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className='flex justify-center items-center rounded-full  overflow-hidden w-full h-full'>
           <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            src={circle}
+            
+            className='w-[150%] h-[150%] object-contain scale-150'
           />
         </div>
       }
@@ -61,10 +63,10 @@ const Experience = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
+          Что я могу предложить.
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
+          Коротко обо мне.
         </h2>
       </motion.div>
 

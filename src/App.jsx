@@ -1,6 +1,30 @@
-import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import React, {useEffect, useRef} from "react";
+import {useInView, useMotionValue, useSpring  } from "framer-motion"
 
+import { BrowserRouter } from "react-router-dom";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, SecondWorks, ThirdWorks, StarsCanvas } from "./components";
+const AnimatedNumbers = ({value}) => {
+  const ref=useRef(null);
+  
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue, {duration: 3000});
+  const isInView = useInView(ref,{once: true});
+  
+  useEffect(() => {
+    if(isInView){
+      motionValue.set(value);
+    }
+  }, [isInView, value, motionValue])
+  
+  useEffect(() => {
+    springValue.on("change", (latest) => {
+      if(ref.current && latest.toFixed(0) <= value ){
+        ref.current.textContent = latest.toFixed(0);
+      }
+    })
+  }, [springValue, value])
+  return <span ref={ref}></span>
+}
 const App = () => {
   return (
     <BrowserRouter>
@@ -13,8 +37,36 @@ const App = () => {
       
         
         <Experience />
+       
+       <div className="mx-10 md:mx-24 lg:mx-36 col md:flex justify-between"> 
+<div className="flex flex-col my-10 items-center justify-center "> 
+<span className=" text-7xl font-bold  ">
++<AnimatedNumbers value={2}/>
+</span>
+<h2 className="text-xl font-medium capitalize text-dark/75">года опыта</h2>
+</div>
+<div className="flex flex-col my-10 items-center justify-center "> 
+<span className=" text-7xl font-bold  ">
++<AnimatedNumbers value={50}/>
+</span>
+<h2 className="text-xl font-medium capitalize text-dark/75">завершённых проектов</h2>
+</div>
+<div className="flex flex-col items-center justify-center "> 
+<span className=" text-7xl font-bold  ">
++<AnimatedNumbers value={200}/>
+</span>
+<h2 className="text-xl font-medium capitalize text-dark/75">Различных технологий</h2>
+</div>
+</div>
+       
         <About />
         <Works />
+        
+       <SecondWorks/>
+       <ThirdWorks/>
+      
+    
+    
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />

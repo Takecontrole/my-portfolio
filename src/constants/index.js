@@ -20,6 +20,14 @@ import {
   tesla,
   shopify,
   carrent,
+  dashboard,
+  valenAdmin,
+  pizza,
+  valen,
+  studio,
+  appleNext,
+  apple,
+  furniture,
   jobit,
   tripguide,
   threejs,
@@ -27,16 +35,16 @@ import {
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: "work",
+    title: "Обо мне",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Мои работы",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Связаться",
   },
 ];
 
@@ -116,55 +124,53 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Full stuck разработчик",
+    company_name: "",
+    icon: meta,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Я эксперт по дизайну пользовательского интерфейса и взаимодействия с данными, и я могу предоставить полные комплексные решения для Вашего сайта, которые помогут с лёгкостью запустить Вашу бизнес идею.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Обслуживание",
+    company_name: "Новейшие технологии",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Комплексный веб-дизайн для малого и среднего бизнеса. Уникальные, современные и профессионально выглядящие веб-сайты, созданные с учетом вовлечения пользователей.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Процесс",
+    company_name: "Постоянная коммуникация",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Я буду информировать Вас на каждом этапе разработки. Вы сможете видеть весь процесс от начала до конца, оценивать и вносить корректировки по желанию.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Управляйте сайтом сами",
+    company_name: "Панель управления",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Я создам для Вас панель управления с правами администратора где Вы сможете добавлять, редактировать и удалять всё самостоятельно, а так-же видеть аналитику продаж, пользователей, их заказы, общаться с ними через внутренний мессенджер"
+    ],
+  },
+  {
+    title: "Результат",
+    company_name: "Оптимизированное присутсвие в интернете",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "",
+    points: [
+      "Вы получите оптимизированный веб-сайт и дизайн веб-сайта. Безопасный, мобильный, быстрый, простой в управлении и обслуживании, а также полностью редактируемый.",
     ],
   },
 ];
@@ -198,9 +204,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Магазин одежды",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web платформа, с уникальным дизайном, которая позволяет пользователям, просматривать товары и фильтровать их, добавлять их в корзину и список желаний, оплачивать покупки, общаться с администратором.",
     tags: [
       {
         name: "react",
@@ -211,45 +217,90 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Styled components",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: valen,
+    source_code_link: "https://valen-nine.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "Панель управления",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "А так выглядит панель управления для администратора, откуда можно управлять интернет магазином самостоятельно.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Material UI",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: valenAdmin,
+    source_code_link: "https://valentino-admin.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Мебель",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Ещё один вариант интернет магазина.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: furniture,
+    source_code_link: "https://furniture-six-nu.vercel.app/",
+  },
+];
+
+const projects2 = [
+  {
+    name: "Apple",
+    description:
+      "Кросота в простоте и удобстве.",
+    tags: [
+      {
+        name: "Next js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Sanity",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: apple,
+    source_code_link: "https://take-control-delta.vercel.app/",
+  },
+ {
+    name: "Пицца",
+    description:
+      "В этой пиццерии покупатели могут заказывать пиццу выбирая желаемые ингредиенты",
+    tags: [
+      {
+        name: "Next js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
@@ -257,9 +308,75 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: pizza,
+    source_code_link: "pizza-with-backend.vercel.app",
+  },
+  {
+    name: "Панель управления",
+    description:
+      "Альтернативный дизайн панели управления с тем же функционалом.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Material UI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: dashboard,
+    source_code_link: "https://admin-dashboard-gilt-mu.vercel.app/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const projects3 = [
+    {
+    name: "Презентация новой модели",
+    description:
+      "Этот сайт акцентирован на показе одного единственного товара. который привлекает покупателя своим необычным 3D дизайном",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "3D",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: appleNext,
+    source_code_link: "https://3dapple.vercel.app/",
+  },
+  {
+    name: "Студия моды",
+    description:
+      "Стильный дизайн. Презентация коллекции.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "animations",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: studio,
+    source_code_link: "https://fashion-studio-one.vercel.app/",
+  },
+];
+
+export { services, technologies, experiences, testimonials, projects, projects2, projects3 };

@@ -1,15 +1,16 @@
-import React from "react";
 import Tilt from "react-tilt";
-import { motion } from "framer-motion";
-
+import React from "react";
+import {motion} from "framer-motion"
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
+
 const Skill = ({name, x, y}) => {
   
-  return (
+  return ( 
+    
     <motion.div className="absolute flex items-center justify-center rounded-full font-semibold bg-lightsec text-light text-xs lg:text-lg  px-2 lg:py-5 lg:px-8  shadow-white cursor-pointer "
 whileHover={{scale:1.05}}
 initial={{x:0, y:0}}
@@ -27,6 +28,7 @@ const About = () => {
   return (
     <>
     <div  className="w-full h-[400px] md:h-screen relative flex items-center justify-center rounded-full bg-web bg-cover bg-center mt-64">
+
 
 <motion.div className="flex items-center justify-center rounded-full font-semibold bg-transparent text-xs lg:text-3xl text-light lg:p-8 shadow-dark cursor-pointer"
 whileHover={{scale:1.05}}

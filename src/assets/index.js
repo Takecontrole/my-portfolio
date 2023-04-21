@@ -30,7 +30,24 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import valen from "./4c4a7d5e-0478-4c5f-9e12-7c0c6f5dee90.png";
+import pizza from "./4cc1307c-76d8-4d6b-9cc3-b7106746b140.png";
+import valenAdmin from "./d3c36270-cd38-451d-bb59-5b0fb945499b.png";
+import dashboard from "./ea5fe588-2ed9-4ec3-9622-cab009d11bf4.png";
+import furniture from "./Screenshot_20230421_135430_com.android.chrome_edit_16580953555281.jpg";
+import apple from "./Screenshot_20230421_135847_com.android.chrome_edit_17193043751541.jpg";
+import appleNext from "./Screenshot_20230421_140156_com.android.chrome_edit_17117161923949.jpg";
+import studio from "./Screenshot_20230421_135935_com.android.chrome_edit_17149309893736.jpg";
+
 export {
+  dashboard,
+  valenAdmin,
+  pizza,
+  valen,
+  studio,
+  appleNext,
+  apple,
+  furniture,
   logo,
   backend,
   creator,
