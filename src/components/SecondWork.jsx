@@ -62,7 +62,7 @@ const SecondWorks = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>Взгляд с другой стороны</p>
-        <h2 className={`${styles.sectionHeadText}`}>Ещё быстрее, ешё мощнее.</h2>
+        <h2 className={`${styles.sectionHeadText}`}>Ещё быстрее, ещё мощнее.</h2>
       </motion.div>
 
       <div className='w-full flex'>
