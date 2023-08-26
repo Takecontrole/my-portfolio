@@ -16,6 +16,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  source_code_link_github
 }) => {
   return (
     <motion.div onClick={() => window.open(source_code_link, "_blank")} variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -33,8 +34,18 @@ const ProjectCard = ({
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
-
- 
+                    <div  className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+         
+            <div onClick={(event) => event.stopPropagation()}
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img onClick={() =>  window.open(source_code_link_github, "_blank")}
+                src={github}
+                alt='source code'
+                className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+          </div>
         </div>
 
         <div className='mt-5'>
@@ -61,8 +72,8 @@ const SecondWorks = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Взгляд с другой стороны</p>
-        <h2 className={`${styles.sectionHeadText}`}>Ещё быстрее, ещё мощнее.</h2>
+        <p className={`${styles.sectionSubText} `}></p>
+        <h2 className={`${styles.sectionHeadText}`}>Анимации, вёрстка.</h2>
       </motion.div>
 
       <div className='w-full flex'>
@@ -70,7 +81,7 @@ const SecondWorks = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Эти сайты созданы по технологии, которая улучшает поисковую оптимизацию. Проще говоря, это процесс улучшения вашего веб-сайта, чтобы повысить его видимость в Google, Яндекс, Microsoft Bing и других поисковых системах, когда люди ищут товары, которые вы продаете. Так же здесь представлены дизайн технологии, которые когда-то использовались такой гигантской компанией как Apple.
+          
         </motion.p>
       </div>
 

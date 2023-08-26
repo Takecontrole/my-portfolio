@@ -78,52 +78,12 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Напишите мне</p>
         <h3 className={styles.sectionHeadText}>Связаться</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Ваше имя</span>
-            <input
-              type='text'
-              name='name'
-              value={form.name}
-              onChange={handleChange}
-              placeholder="Как Вас зовут?"
-              className='bg-tertiary py-4 px-6 placeholder:text-light text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Email</span>
-            <input
-              type='email'
-              name='email'
-              value={form.email}
-              onChange={handleChange}
-              placeholder="Какой у вас email?"
-              className='bg-tertiary py-4 px-6 placeholder:text-light text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Ваге сообщение</span>
-            <textarea
-              rows={7}
-              name='message'
-              value={form.message}
-              onChange={handleChange}
-              placeholder='Что вы хотите мне сказать?'
-              className='bg-tertiary py-4 px-6 placeholder:text-light text-white rounded-lg outline-none border-none font-medium'
-            />
-          </label>
-
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
-            {loading ? "Отправка..." : "Отправить"}
-          </button>
-        </form>
+       <p className={styles.sectionSubText}>Телеграмм +79021573442</p>
+       <p className={styles.sectionSubText}>What's up +79021573442</p>
+       <p className={styles.sectionSubText}>Я ВКонтакте: vk.com/takecontrole</p>
+       <p className={styles.sectionSubText}>GitHub https://github.com/Takecontrole</p>
+       <p className={styles.sectionSubText}>Gmail takecontrole2034@gmail.com</p>
+      
       </motion.div>
 
       <motion.div

@@ -31,6 +31,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  commercePlatform,
+  socialMedia
 } from "../assets";
 
 export const navLinks = [
@@ -124,53 +126,33 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Full stuck разработчик",
+    title: "Уверенно знаю",
     company_name: "",
     icon: meta,
     iconBg: "#383E56",
     date: "",
     points: [
-      "Я эксперт по дизайну пользовательского интерфейса и взаимодействия с данными, и я могу предоставить полные комплексные решения для Вашего сайта, которые помогут с лёгкостью запустить Вашу бизнес идею.",
+      "React • Redux • JavaScript • REST API • MongoDB • Git • CSS + (Material ui, Tailwind, Styled components, Bootstrap) • Responsive/Adaptive design • HTML •",
     ],
   },
   {
-    title: "Обслуживание",
-    company_name: "Новейшие технологии",
+    title: "Понимаю и практиковал",
+    company_name: "",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "",
     points: [
-      "Комплексный веб-дизайн для малого и среднего бизнеса. Уникальные, современные и профессионально выглядящие веб-сайты, созданные с учетом вовлечения пользователей.",
+      "Node js • Express • Next js • Saas • TypeScript • Socket io",
     ],
   },
-  {
-    title: "Процесс",
-    company_name: "Постоянная коммуникация",
+      {
+    title: "Софт-скилы",
+    company_name: "",
     icon: shopify,
     iconBg: "#383E56",
     date: "",
     points: [
-      "Я буду информировать Вас на каждом этапе разработки. Вы сможете видеть весь процесс от начала до конца, оценивать и вносить корректировки по желанию.",
-    ],
-  },
-  {
-    title: "Управляйте сайтом сами",
-    company_name: "Панель управления",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "",
-    points: [
-      "Я создам для Вас панель управления с правами администратора где Вы сможете добавлять, редактировать и удалять всё самостоятельно, а так-же видеть аналитику продаж, пользователей, их заказы, общаться с ними через внутренний мессенджер"
-    ],
-  },
-  {
-    title: "Результат",
-    company_name: "Оптимизированное присутсвие в интернете",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "",
-    points: [
-      "Вы получите оптимизированный веб-сайт и дизайн веб-сайта. Безопасный, мобильный, быстрый, простой в управлении и обслуживании, а также полностью редактируемый.",
+      "Свободно говорю на английском (С1), испанском (В2), базово на китайском(А2). Не скован в коллективе, легко общаюсь, прислушиваюсь к другим и воспринимаю критику, вежливый, не ругаюсь, не создаю драмм, держу позитивный настрой. Возьму во внимание, что самомотивация помогла мне достичь многих целей, а трудности научили решать проблемы и находить способ двигаться вперёд, гибко и логически мыслить, и адаптироваться к новому.",
     ],
   },
 ];
@@ -204,16 +186,104 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Магазин одежды",
+    name: "Социальная сеть",
+    title: "Основной функционал, который я реализовал в этом проекте:",
     description:
-      "Web платформа, с уникальным дизайном, которая позволяет пользователям, просматривать товары и фильтровать их, добавлять их в корзину и список желаний, оплачивать покупки, общаться с администратором.",
+      "Приватные маршруты, авторизация с токеном и валидацией, подключил Redux, cloudinary, запросы к api в отдельном файле, тёмная/светлая тема, настройку профиля, подписки на друзей, возможность добавлять, редактировать и удалять записи на странице профиля, а также видео, фото и музыку в личных альбомах, лайки, комментарии и ответ на комментарии, пагинация, добавление в закладки, страница с новостями, рекоминдация по подпискам, чат (со смайликами), online/offline статус, уведомления, поиск по людям с фильтром, по постам и видео, раздел с музыкой, анимации, модальные окна. И многое другое.",
     tags: [
       {
-        name: "react",
+        name: "React",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "Material UI/CSS",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Mongodb",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: socialMedia,
+    source_code_link: "https://social-media-puce-rho.vercel.app/",
+    source_code_link_github: "https://github.com/Takecontrole/social-media",
+  },
+  {
+    name: "Комерческая платформа",
+    title: "Основной функционал, который я реализовал в этом проекте:",
+    description:
+      "Отдельные маршруты для пользователей, продовцов и администраторов. Для регистрации необходимо подтверждение email, на почту приходит письмо.",
+    description1:
+      "Продавец может: создавать и контролировать товары, события, скидочные купоны, видеть денежный баланс, выводить деньги, список заказов, изменять статус заказов, подтверждать возврат средств, принимать и отправлять сообщения в реальном времени, редактировать профиль. ",
+    description2:
+      "Покупатель может: искать товары, добавлять их в карзину, избранное, редактировать профиль, менять пароль, оформлять заказ (подключена платёжная система stripe), отменять доставку, оценивать продавцов, оставлять отзывы, писать продавцу, видеть лидеров продаж.",
+    description3:
+      "Администратор может: видеть и контролировать всех пользователей и продацов, видеть все товары, события и заказы.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "Tailwind",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Mongodb",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: commercePlatform,
+    source_code_link: "https://frontend-commerce-two.vercel.app/",
+    source_code_link_github: "https://github.com/Takecontrole/frontend-commerce",
+  },
+  {
+    name: "Магазин одежды",
+    description:
+      "Анимации, свайперы, табы, красивый дизайн, web платформа позволяет пользователям просматривать и фильтровать товары, видеть похожие, добавлять их в корзину, оплачивать покупки. Есть динамичная панель управления для админа с различными CRUD операциями.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+            {
+        name: "Styled components",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: valen,
+    source_code_link: "https://valen-nine.vercel.app/",
+    source_code_link_github: "https://github.com/Takecontrole/valen",
+  },
+];
+const proud = [
+  {
+    name: "Магазин одежды",
+    description:
+      "Анимации, свайперы, табы, красивый дизайн, web платформа позволяет пользователям просматривать и фильтровать товары, видеть похожие, добавлять их в корзину, оплачивать покупки. Есть динамичная панель управления для админа с различными CRUD операциями.",
+    tags: [
+      {
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Mongodb",
         color: "green-text-gradient",
       },
       {
@@ -223,6 +293,7 @@ const projects = [
     ],
     image: valen,
     source_code_link: "https://valen-nine.vercel.app/",
+    source_code_link_github: "https://github.com/Takecontrole/valen",
   },
   {
     name: "Панель управления",
@@ -244,6 +315,7 @@ const projects = [
     ],
     image: valenAdmin,
     source_code_link: "https://valentino-admin.vercel.app/",
+    source_code_link_github: "https://github.com/Takecontrole/valentino-admin",
   },
   {
     name: "Мебель",
@@ -251,32 +323,41 @@ const projects = [
       "Ещё один вариант интернет магазина.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
+       {
+        name: "Bootstrap",
+        color: "orange-text-gradient",
+      },
       {
-        name: "mongodb",
+        name: "Nodejs",
         color: "green-text-gradient",
       },
       {
-        name: "Bootstrap",
+        name: "Mongodb",
         color: "pink-text-gradient",
       },
     ],
     image: furniture,
     source_code_link: "https://furniture-six-nu.vercel.app/",
+    source_code_link_github: "https://github.com/Takecontrole/furniture",
   },
 ];
 
-const projects2 = [
+const projects3 = [
   {
     name: "Apple",
     description:
-      "Кросота в простоте и удобстве.",
+      "TypeScript. Вход через google аккаунт, анимация при скролле, redux-toolkit.",
     tags: [
       {
         name: "Next js",
         color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "orange-text-gradient",
       },
       {
         name: "Sanity",
@@ -289,39 +370,92 @@ const projects2 = [
     ],
     image: apple,
     source_code_link: "https://take-control-delta.vercel.app/",
+    source_code_link_github: "https://github.com/Takecontrole/apple/tree/main",
   },
  {
     name: "Пицца",
     description:
-      "В этой пиццерии покупатели могут заказывать пиццу выбирая желаемые ингредиенты",
+      "Покупатели могут заказывать пиццу выбирая желаемые ингредиенты, оформлять доставку, есть панель администратора для контроля доставки.",
     tags: [
       {
         name: "Next js",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
     image: pizza,
-    source_code_link: "pizza-with-backend.vercel.app",
+    source_code_link: "https://pizza-with-backend.vercel.app/",
+    source_code_link_github: "https://github.com/Takecontrole/pizza-nextjs/tree/main",
   },
+];
+
+const projects2 = [
   {
-    name: "Панель управления",
+    name: "Студия моды",
     description:
-      "Альтернативный дизайн панели управления с тем же функционалом.",
+      "framer-motion, gsap, locomotive-scroll, normalize.css.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Animations",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SCSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: studio,
+    source_code_link: "https://fashion-studio-one.vercel.app/",
+    source_code_link_github: "https://github.com/Takecontrole/fashion-studio",
+  },
+    {
+    name: "Мебель",
+    description:
+      "mern-stack, redux-toolkit, stripe, socket io, bootstrap, react-reveal, .",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+       {
+        name: "Bootstrap",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Mongodb",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: furniture,
+    source_code_link: "https://furniture-six-nu.vercel.app/",
+    source_code_link_github: "https://github.com/Takecontrole/furniture",
+  },
+    {
+    name: "Панель управления",
+    description:
+      "Formik, yup , mui icons, mui-data-grid, nivo, char.js, fullcalendar.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Mongodb",
         color: "green-text-gradient",
       },
       {
@@ -331,51 +465,7 @@ const projects2 = [
     ],
     image: dashboard,
     source_code_link: "https://admin-dashboard-gilt-mu.vercel.app/",
-  },
-];
-
-const projects3 = [
-    {
-    name: "Презентация новой модели",
-    description:
-      "Этот сайт акцентирован на показе одного единственного товара. который привлекает покупателя своим необычным 3D дизайном",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "3D",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: appleNext,
-    source_code_link: "https://3dapple.vercel.app/",
-  },
-  {
-    name: "Студия моды",
-    description:
-      "Стильный дизайн. Презентация коллекции.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "animations",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: studio,
-    source_code_link: "https://fashion-studio-one.vercel.app/",
+    source_code_link_github: "https://github.com/Takecontrole/AdminDashboard",
   },
 ];
 

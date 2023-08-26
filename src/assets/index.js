@@ -30,6 +30,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import commercePlatform from "./commercePlatform.png";
+import socialMedia from "./socialMedia.png";
 import valen from "./4c4a7d5e-0478-4c5f-9e12-7c0c6f5dee90.png";
 import pizza from "./4cc1307c-76d8-4d6b-9cc3-b7106746b140.png";
 import valenAdmin from "./d3c36270-cd38-451d-bb59-5b0fb945499b.png";
@@ -76,4 +78,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  commercePlatform,
+  socialMedia
 };
