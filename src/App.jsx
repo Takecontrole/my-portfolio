@@ -40,28 +40,15 @@ const App = () => {
        
        <div className="mx-10 md:mx-24 lg:mx-36 col md:flex justify-between"> 
 <div className="flex flex-col my-10 items-center justify-center "> 
-<span className=" text-7xl font-bold  "><AnimatedNumbers value={1}/>,<AnimatedNumbers value={5}/>
-
+<span className=" text-7xl font-bold  "><AnimatedNumbers value={3}/>
 </span>
-<h2 className="text-xl font-medium capitalize text-dark/75">года релевантного опыта</h2>
+<h2 className="text-xl font-medium capitalize text-dark/75">года опыта</h2>
 </div>
 <div className="flex flex-col my-10 items-center justify-center "> 
 <span className=" text-7xl font-bold  ">
-<AnimatedNumbers value={1}/>
+<AnimatedNumbers value={2}/>
 </span>
 <h2 className="text-xl font-medium capitalize text-dark/75">опыта с react</h2>
-</div>
-<div className="flex flex-col my-10 items-center justify-center "> 
-<span className=" text-7xl font-bold  ">
-<AnimatedNumbers value={10}/><span className=" text-4xl font-bold  ">+/-</span>
-</span>
-<h2 className="text-xl font-medium capitalize text-dark/75">средне часов в день</h2>
-</div>
-<div className="flex flex-col items-center justify-center "> 
-<span className=" text-7xl font-bold  ">
-<AnimatedNumbers value={11}/>
-</span>
-<h2 className="text-xl font-medium capitalize text-dark/75">пет-проектов</h2>
 </div>
 </div>
        
